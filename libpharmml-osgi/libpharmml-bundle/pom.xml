@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<project
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+    xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>eu.ddmore</groupId>
+    <artifactId>libpharmml-osgi</artifactId>
+    <version>0.3.1</version>
+
+    <packaging>bundle</packaging>
+
+    <properties>
+        <maven.bundle.plugin.version>2.3.7</maven.bundle.plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>eu.ddmore.pharmml</groupId>
+            <artifactId>libPharmML</artifactId>
+            <version>0.3.1-b2</version>
+        </dependency>
+    </dependencies>
+
+
+
+    <build>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>${maven.bundle.plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Embed-Dependency>*;scope=compile|runtime;inline=true</Embed-Dependency>
+                        <_exportcontents>eu.ddmore.*</_exportcontents>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+
+
+        <!-- FP: add this to reconcile with m2e -->
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.felix</groupId>
+                                        <artifactId>maven-bundle-plugin</artifactId>
+                                        <versionRange>[1.0.0,)</versionRange>
+                                        <goals>
+                                            <goal>manifest</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <execute />
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+
+
+    <url>
+https://sourceforge.net/projects/libpharmml.ddmore.p/
+</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <organization>
+        <name>EMBL-European Bioinformatics Institute</name>
+        <url>http://www.ebi.ac.uk/</url>
+    </organization>
+    <developers>
+        <developer>
+            <name>Florent Yvon</name>
+            <email>florent@ebi.ac.uk</email>
+        </developer>
+        <developer>
+            <name>Stuart Moodie</name>
+            <email>moodie@ebi.ac.uk</email>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>Mihai Glonț</name>
+            <email>mihai.glont@ebi.ac.uk</email>
+        </contributor>
+    </contributors>
+</project>

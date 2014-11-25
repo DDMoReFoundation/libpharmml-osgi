@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <groupId>eu.ddmore</groupId>
+    <artifactId>libpharmml-p2-builder</artifactId>
+	<version>0.3.1.b2-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>../libpharmml-target</module>
+		<module>../libpharmml-feature</module>
+		<module>../libpharmml-p2</module>
+	</modules>
+
+	<url>http://ddmore.eu/</url>
+	<name>Drug Disease Model Resources Framework</name>
+	<description>The Drug Disease Model Resources (DDMoRe) consortium builds and maintains a universally applicable, open source, model based framework, intended as the gold standard for future collaborative drug and disease Modelling &amp; Simulation.</description>
+</project> 
