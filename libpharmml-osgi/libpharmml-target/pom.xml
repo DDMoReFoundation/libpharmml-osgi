@@ -7,7 +7,7 @@
         <relativePath>../libpharmml-releng/pom.xml</relativePath>
 		<groupId>eu.ddmore</groupId>
 		<artifactId>eu.ddmore.libpharmml.parent</artifactId>
-		<version>0.3.1-SNAPSHOT</version>
+		<version>0.3.12-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>eu.ddmore.libpharmml.target</artifactId>

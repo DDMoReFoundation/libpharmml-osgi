@@ -6,14 +6,14 @@
 	
 	<groupId>eu.ddmore</groupId>
 	<artifactId>eu.ddmore.libpharmml.parent</artifactId>
-	<version>0.3.1-SNAPSHOT</version>
+	<version>0.3.12-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<mvn.clean.plugin.version>2.4.1</mvn.clean.plugin.version>
-
+        <libpharmml-osgi.version>0.3.12</libpharmml-osgi.version>
 		<!-- Tycho -->
 		<tycho.version>0.17.0</tycho.version>
 		<tycho.extras.version>0.17.0</tycho.extras.version>
@@ -37,7 +37,7 @@
         <dependency>
             <groupId>eu.ddmore</groupId>
             <artifactId>libpharmml-osgi</artifactId>
-            <version>0.3.1</version>
+            <version>${libpharmml-osgi.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
