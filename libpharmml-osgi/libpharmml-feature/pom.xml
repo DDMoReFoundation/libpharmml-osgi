@@ -5,13 +5,49 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<parent>
-		<relativePath>../libpharmml-releng/pom.xml</relativePath>
+		<relativePath>../libpharmml-parent/pom.xml</relativePath>
 		<groupId>eu.ddmore</groupId>
 		<artifactId>eu.ddmore.libpharmml.parent</artifactId>
-		<version>0.3.12-SNAPSHOT</version>
+		<version>0.4.0-SNAPSHOT</version>
 	</parent>
-	
+	<name>libPharmML Feature</name>
 	<artifactId>eu.ddmore.libpharmml.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
-	
+	<build>
+        <plugins>
+			<plugin>
+                    <!-- Workaround for replacing tokens in about.mappings file so build number is included in the 
+                        products 'about dialog' See https://bugs.eclipse.org/bugs/show_bug.cgi?id=362252 -->
+                  <artifactId>maven-antrun-plugin</artifactId>
+                  <executions>
+                      <execution>
+                        <id>update-branding-process-resources</id>
+                        <phase>process-resources</phase>
+                       <configuration>
+                          <tasks>
+                            <copy file="feature.properties" tofile="feature.properties.orig"/>
+                            <replace file="feature.properties" 
+                                     token="@UPDATEURL@" value="${p2.repository.url}" />
+                          </tasks>
+                        </configuration>
+                        <goals>
+                          <goal>run</goal>
+                        </goals>
+                      </execution>
+                      <execution>
+                        <id>update-branding-package</id>
+                        <phase>package</phase>
+                       <configuration>
+                          <tasks>
+                            <move file="feature.properties.orig" tofile="feature.properties" overwrite="true"/>
+                          </tasks>
+                        </configuration>
+                        <goals>
+                          <goal>run</goal>
+                        </goals>
+                      </execution>
+                  </executions>
+ 			</plugin>
+        </plugins>
+      </build>
 </project>

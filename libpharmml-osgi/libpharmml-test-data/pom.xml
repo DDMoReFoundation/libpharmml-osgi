@@ -9,21 +9,13 @@
 		<artifactId>libpharmml-bundles-parent</artifactId>
 		<version>0.4.0</version>
 	</parent>
-	
-    <artifactId>libpharmml-osgi</artifactId>
+    <artifactId>libpharmml-test-data</artifactId>
+    <name>libPharmML Test Data</name>
     <packaging>bundle</packaging>
 
     <properties>
         <maven.bundle.plugin.version>2.3.7</maven.bundle.plugin.version>
     </properties>
-	
-    <dependencies>
-        <dependency>
-            <groupId>eu.ddmore.pharmml</groupId>
-            <artifactId>libPharmML</artifactId>
-            <version>0.4-beta-b2</version>
-        </dependency>
-    </dependencies>
 
     <build>
 
@@ -36,7 +28,7 @@
                 <configuration>
                     <instructions>
                         <Embed-Dependency>*;scope=compile|runtime;inline=true</Embed-Dependency>
-                        <_exportcontents>eu.ddmore.*</_exportcontents>
+                        <Export-Package>*</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>

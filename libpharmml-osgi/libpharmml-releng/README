@@ -1,20 +1,20 @@
 To build everything:
 1. Go to parent
 cd .. 
-
-2. Build libpharmml bundle
-mvn -f libpharmml-bundle\pom.xml clean install
+2. Build libpharmml bundles
+mvn -f libpharmml-releng\bundles-parent\pom.xml clean install
 
 3. Build libpharmml Eclipse RCP modules
-mvn -f libpharmml-releng\modules-aggregator.xml clean install
+mvn -f libpharmml-releng\p2-repository-builder\pom.xml clean install
 
 4. p2 repository will be in:
 libpharmml-p2\target\repository
 
 
 To update libpharmml version being used, you need to:
-1. Update project versions in all pom.xml files and modules-aggregator.xml
-2. Update libpharmml library dependency in libpharmml-releng\pom.xml and librpharmml-bundle\pom.xml 
+1. Update project versions in all pom.xml files and libpharmml-releng\pom.xml
+2. Update libpharmml library dependency in libpharmml-parent\pom.xml and librpharmml-bundle\pom.xml
+3. Update example PharmML resources based on the examples downloaded from https://sites.google.com/site/pharmmltemp/0-6
 WARNING!!! mind the different versioning scheme!
-3. Update feature version in libpharmml-feature\feature.xml
-4. Update feature version in libpharmml-p2\category.xml
+4. Update feature version in libpharmml-feature\feature.xml
+5. Update feature version in libpharmml-p2\category.xml

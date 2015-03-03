@@ -2,7 +2,7 @@
 <feature
       id="eu.ddmore.libpharmml.feature"
       label="%label"
-      version="0.3.12.qualifier"
+      version="0.4.0.qualifier"
       provider-name="%provider">
 
    <description>
@@ -98,6 +98,13 @@ This Agreement is governed by the laws of the State of New York and the intellec
          version="0.0.0"
          unpack="false"/>
 
+   <plugin
+         id="eu.ddmore.libpharmml-test-data"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+		 
    <plugin
          id="com.sun.xml.bind"
          download-size="0"
