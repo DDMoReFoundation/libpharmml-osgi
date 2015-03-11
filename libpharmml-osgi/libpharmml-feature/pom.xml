@@ -16,8 +16,7 @@
     <build>
         <plugins>
             <plugin>
-                <!-- Workaround for replacing tokens in about.mappings file 
-                    so build number is included in the products 'about dialog' See https://bugs.eclipse.org/bugs/show_bug.cgi?id=362252 -->
+                <!-- Populating feature.properties with appropriate update site url which is different for CI and RELEASE builds -->
                 <artifactId>maven-antrun-plugin</artifactId>
                 <executions>
                     <execution>

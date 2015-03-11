@@ -11,7 +11,7 @@
 	
 	<properties>
 		<!-- A URL where the p2 repository will be published, the value is set in feature.xml of the mdl-ide-dependencies feature -->
-		<version.no.snapshot>0.4.0-beta-b2</version.no.snapshot>
+		<version.no-snapshot>0.4.0-beta-b2</version.no-snapshot>
 		<sf.publish.location>http://sourceforge.net/projects/ddmore/files/update/libpharmml</sf.publish.location>
 		<p2.repository.url>${sf.publish.location}/${version.no-snapshot}/ci/</p2.repository.url>
 	</properties>
