@@ -9,13 +9,24 @@
 		<artifactId>libpharmml-bundles-parent</artifactId>
 		<version>0.4.0-SNAPSHOT</version>
 	</parent>
-    <artifactId>libpharmml-test-data</artifactId>
-    <name>libPharmML Test Data</name>
+	
+	<version>0.1.0-SNAPSHOT</version>
+    <artifactId>libpharmml-pkmacro-osgi</artifactId>
     <packaging>bundle</packaging>
 
     <properties>
         <maven.bundle.plugin.version>2.3.7</maven.bundle.plugin.version>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
+	
+    <dependencies>
+        <dependency>
+            <groupId>eu.ddmore.pharmml</groupId>
+            <artifactId>libPharmML-PKMacro</artifactId>
+            <version>0.1-b1</version>
+        </dependency>
+    </dependencies>
 
     <build>
 
@@ -28,7 +39,7 @@
                 <configuration>
                     <instructions>
                         <Embed-Dependency>*;scope=compile|runtime;inline=true</Embed-Dependency>
-                        <Export-Package>*</Export-Package>
+                        <_exportcontents>eu.ddmore.*</_exportcontents>
                     </instructions>
                 </configuration>
             </plugin>
@@ -68,26 +79,26 @@
 
 
     <url>https://sourceforge.net/projects/libpharmml.ddmore.p/</url>
+
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-        </license>
-    </licenses>
+        </license>                                                   
+    </licenses>                                                      
+
     <organization>
         <name>EMBL-European Bioinformatics Institute</name>
-        <url>http://www.ebi.ac.uk/</url>
-    </organization>
+        <url>http://www.ebi.ac.uk/</url>                   
+    </organization>                                        
+
     <developers>
         <developer>
             <name>Florent Yvon</name>
             <email>florent@ebi.ac.uk</email>
-        </developer>
-        <developer>
-            <name>Stuart Moodie</name>
-            <email>moodie@ebi.ac.uk</email>
-        </developer>
-    </developers>
+        </developer>                        
+    </developers>                           
+
     <contributors>
         <contributor>
             <name>Mihai Glonț</name>

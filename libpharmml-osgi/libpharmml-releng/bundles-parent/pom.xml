@@ -5,12 +5,13 @@
 	<modelVersion>4.0.0</modelVersion>
     <groupId>eu.ddmore</groupId>
     <artifactId>libpharmml-bundles-parent</artifactId>
-	<version>0.4.0</version>
+    <version>0.4.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
     <name>libPharmML bundles Builder</name>
 	
 	<modules>
 		<module>../../libpharmml-bundle</module>
+        <module>../../libpharmml-pkmacro-bundle</module>
 		<module>../../libpharmml-test-data</module>
 	</modules>
 

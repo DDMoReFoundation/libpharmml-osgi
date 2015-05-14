@@ -12,7 +12,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <libpharmml-osgi.version>0.4.0</libpharmml-osgi.version>
+        <libpharmml-osgi.version>0.4.0-SNAPSHOT</libpharmml-osgi.version>
+        <libpharmml-pkmacro-osgi.version>0.1.0-SNAPSHOT</libpharmml-pkmacro-osgi.version>
         <!-- Tycho -->
         <tycho.version>0.22.0</tycho.version>
         <tycho.extras.version>0.22.0</tycho.extras.version>
@@ -38,6 +39,11 @@
             <groupId>eu.ddmore</groupId>
             <artifactId>libpharmml-osgi</artifactId>
             <version>${libpharmml-osgi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>eu.ddmore</groupId>
+            <artifactId>libpharmml-pkmacro-osgi</artifactId>
+            <version>${libpharmml-pkmacro-osgi.version}</version>
         </dependency>
         <dependency>
             <groupId>eu.ddmore</groupId>
