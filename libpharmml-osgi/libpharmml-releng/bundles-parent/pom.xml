@@ -10,9 +10,9 @@
     <name>libPharmML bundles Builder</name>
 	
 	<modules>
-		<module>../../libpharmml-bundle</module>
+        <module>../../libpharmml-bundle</module>
         <module>../../libpharmml-pkmacro-bundle</module>
-		<module>../../libpharmml-test-data</module>
+        <module>../../libpharmml-test-data</module>
 	</modules>
 
 	<url>http://ddmore.eu/</url>
