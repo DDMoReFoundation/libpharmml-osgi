@@ -13,24 +13,8 @@
 		<!-- A URL where the p2 repository will be published, the value is set in feature.xml of the mdl-ide-dependencies feature -->
 		<sf.version.directory.name>0.4.0-SNAPSHOT</sf.version.directory.name>
 		<sf.publish.location>http://sourceforge.net/projects/ddmore/files/update/libpharmml</sf.publish.location>
-		<p2.repository.url>${sf.publish.location}/${sf.version.directory.name}/ci/</p2.repository.url>
+		<p2.repository.url>${sf.publish.location}/${sf.version.directory.name}/</p2.repository.url>
 	</properties>
-	
-	<profiles>
-		<profile>
-			<id>ci</id>
-			<activation>
-				<activeByDefault/>
-			</activation>
-		</profile>
-		<profile>
-			<id>release</id>
-			<properties>
-				<p2.repository.url>${sf.publish.location}/${sf.version.directory.name}/release/</p2.repository.url>
-			</properties>
-		</profile>
-	</profiles>
-	
 	
 	<modules>
 		<module>../../libpharmml-parent</module>
