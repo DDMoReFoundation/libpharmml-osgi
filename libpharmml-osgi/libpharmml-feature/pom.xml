@@ -10,6 +10,13 @@
         <artifactId>eu.ddmore.libpharmml.parent</artifactId>
         <version>0.4.0-SNAPSHOT</version>
     </parent>
+	
+	<properties>
+		<sf.version.directory.name>0.4.0-SNAPSHOT</sf.version.directory.name>
+		<sf.publish.location>http://sourceforge.net/projects/ddmore/files/update/libpharmml</sf.publish.location>
+		<p2.repository.url>${sf.publish.location}/${sf.version.directory.name}/</p2.repository.url>
+	</properties>
+	
     <name>libPharmML Feature</name>
     <artifactId>eu.ddmore.libpharmml.feature</artifactId>
     <packaging>eclipse-feature</packaging>

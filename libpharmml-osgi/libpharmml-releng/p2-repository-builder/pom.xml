@@ -9,13 +9,6 @@
     <packaging>pom</packaging>
     <name>libPharmML p2 Builder</name>
 	
-	<properties>
-		<!-- A URL where the p2 repository will be published, the value is set in feature.xml of the mdl-ide-dependencies feature -->
-		<sf.version.directory.name>0.4.0-SNAPSHOT</sf.version.directory.name>
-		<sf.publish.location>http://sourceforge.net/projects/ddmore/files/update/libpharmml</sf.publish.location>
-		<p2.repository.url>${sf.publish.location}/${sf.version.directory.name}/</p2.repository.url>
-	</properties>
-	
 	<modules>
 		<module>../../libpharmml-parent</module>
 		<module>../../libpharmml-target</module>
