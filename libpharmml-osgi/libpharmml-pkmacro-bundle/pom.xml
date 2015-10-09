@@ -7,10 +7,10 @@
 		<relativePath>../libpharmml-releng/bundles-parent/pom.xml</relativePath>
 		<groupId>eu.ddmore</groupId>
 		<artifactId>libpharmml-bundles-parent</artifactId>
-		<version>0.4.0-SNAPSHOT</version>
+		<version>0.4.3-SNAPSHOT</version>
 	</parent>
 	
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.4-SNAPSHOT</version>
     <artifactId>libpharmml-pkmacro-osgi</artifactId>
     <packaging>bundle</packaging>
 
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>eu.ddmore.pharmml</groupId>
             <artifactId>libPharmML-PKMacro</artifactId>
-            <version>0.1.1-b1</version>
+            <version>0.1.4-b1</version>
         </dependency>
     </dependencies>
 
