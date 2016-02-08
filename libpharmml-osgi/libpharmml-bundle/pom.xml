@@ -7,7 +7,7 @@
 		<relativePath>../libpharmml-releng/bundles-parent/pom.xml</relativePath>
 		<groupId>eu.ddmore</groupId>
 		<artifactId>libpharmml-bundles-parent</artifactId>
-        <version>0.6.0-SNAPSHOT</version>
+        <version>0.6.1-SNAPSHOT</version>
 	</parent>
     <artifactId>libpharmml-osgi</artifactId>
     <packaging>bundle</packaging>
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>eu.ddmore.pharmml</groupId>
             <artifactId>libPharmML</artifactId>
-            <version>0.6-b1</version>
+            <version>0.6.1-1</version>
         </dependency>
     </dependencies>
 

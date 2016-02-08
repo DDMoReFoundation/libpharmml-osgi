@@ -6,13 +6,13 @@
 
     <groupId>eu.ddmore</groupId>
     <artifactId>eu.ddmore.libpharmml.parent</artifactId>
-    <version>0.6.0-SNAPSHOT</version>
+    <version>0.6.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>libPharmML Parent</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <libpharmml-osgi.version>0.6.0-SNAPSHOT</libpharmml-osgi.version>
+        <libpharmml-osgi.version>0.6.1-SNAPSHOT</libpharmml-osgi.version>
         <libpharmml-pkmacro-osgi.version>0.1.7-SNAPSHOT</libpharmml-pkmacro-osgi.version>
         <!-- Tycho -->
         <tycho.version>0.22.0</tycho.version>

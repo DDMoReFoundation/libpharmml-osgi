@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>eu.ddmore</groupId>
     <artifactId>libpharmml-p2-builder</artifactId>
-    <version>0.6.0-SNAPSHOT</version>
+    <version>0.6.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>libPharmML p2 Builder</name>
 	
