@@ -2,7 +2,7 @@
 <feature
       id="eu.ddmore.libpharmml.feature"
       label="%label"
-      version="0.7.1.qualifier"
+      version="0.7.2.qualifier"
       provider-name="%provider">
 
    <description>

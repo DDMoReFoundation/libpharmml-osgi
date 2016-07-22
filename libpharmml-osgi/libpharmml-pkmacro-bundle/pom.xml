@@ -7,7 +7,7 @@
 		<relativePath>../libpharmml-releng/bundles-parent/pom.xml</relativePath>
 		<groupId>eu.ddmore</groupId>
 		<artifactId>libpharmml-bundles-parent</artifactId>
-		<version>0.7.1-SNAPSHOT</version>
+		<version>0.7.2-SNAPSHOT</version>
 	</parent>
 	
 	<version>0.2.1-SNAPSHOT</version>
