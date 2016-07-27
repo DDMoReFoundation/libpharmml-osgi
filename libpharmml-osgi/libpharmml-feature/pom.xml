@@ -8,7 +8,7 @@
         <relativePath>../libpharmml-parent/pom.xml</relativePath>
         <groupId>eu.ddmore</groupId>
         <artifactId>eu.ddmore.libpharmml.parent</artifactId>
-        <version>0.7.2-SNAPSHOT</version>
+        <version>0.7.3-SNAPSHOT</version>
     </parent>
     <name>libPharmML Feature</name>
     <artifactId>eu.ddmore.libpharmml.feature</artifactId>
@@ -16,7 +16,7 @@
     
     <properties>
         <!-- A URL where the p2 repository will be published, the value is set in feature.xml of the mdl-ide-dependencies feature -->
-        <sf.version.directory.name>0.7.2-SNAPSHOT</sf.version.directory.name>
+        <sf.version.directory.name>0.7.3-SNAPSHOT</sf.version.directory.name>
         <sf.publish.location>http://sourceforge.net/projects/ddmore/files/update/libpharmml</sf.publish.location>
         <p2.repository.url>${sf.publish.location}/${sf.version.directory.name}/</p2.repository.url>
     </properties>
